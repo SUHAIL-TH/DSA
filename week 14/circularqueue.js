@@ -1,0 +1,71 @@
+class circularqueue{
+    constructor(capacity){
+        this.items=new Array(capacity)
+        this.currentLength=0
+        this.capacity=capacity
+        this.rear=-1
+        this.front=-1
+ 
+    }
+    isFull(){
+        return this.currentLength===this.capacity
+    
+    }
+    isEmpty(){
+        return  this.currentLength===0
+    }
+    enqueue(element){
+         if(!this.isFull()){
+             this.rear=(this.rear+1)%this.capacity
+            this.items[this.rear]=element
+            this.currentLength=+1
+            if(this.front===-1){
+                this.front=this.rear
+            }
+         }
+    }
+    dequeue(){
+        if(this.isEmpty()){
+            console.log("queue is empty")
+
+        }else{
+            this.items[this.front]=null
+            this.front=(this.front+1)%this.capacity
+            this.currentLength-=-1
+            if(this.isEmpty()){
+                this.rear=-1
+                this.front=-1
+            }
+        }
+    }
+    peek(){
+        if(!this.isEmpty()){
+        return this.items[this.front]
+        }
+        return null
+    }
+
+    print(){
+        if(this.isEmpty()){
+            console.log("queue is empty")
+        }else{
+            let i
+            let str=""
+           
+            for(i=this.front;i!=this.rear;i=(i+1)%this.capacity){
+                str+=this.items[i]+" "
+            }
+            str+=this.items[i]
+            console.log(str)
+        }
+    }
+}
+
+const circle=new circularqueue( 5)
+circle.enqueue(6)
+circle.enqueue(56)
+// circle.dequeue()
+// console.log(circle.isEmpty())
+// console.log(circle.isFull())
+circle.print()
+// console.log(circle.peek())
