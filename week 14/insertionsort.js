@@ -1,4 +1,4 @@
-arr=[8,20,-2,4,-6]
+  arr=[8,20,-2,4,-6]
 
 function insertionsort(arr){
     for(let i=1;i<arr.length;i++){

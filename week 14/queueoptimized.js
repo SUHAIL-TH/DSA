@@ -32,6 +32,8 @@ queue.enqueue(10)
 queue.enqueue(550)
 queue.enqueue(50) 
 queue.dequeue()
+queue.dequeue()
+
 queue.print()
 console.log(queue.peek())
 console.log(queue.isEmpty())

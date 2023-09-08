@@ -29,7 +29,6 @@ class Grap{
         }
     }
 }
-
 const map=new Grap()
 map.insert(3,5,true)
 map.insert(3,12,true)

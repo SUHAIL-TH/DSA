@@ -129,6 +129,7 @@ class Node{
             return
         }else{
             let curr=this.head
+         
             let list=""
             while(curr){
                 list+=`${curr.value} `

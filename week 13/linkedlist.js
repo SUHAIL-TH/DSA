@@ -13,12 +13,9 @@ class LinkedList{
     isEmpty(){
         return this.size===0
     }
-    // getsize(){
-    //     return this.size
-    // }
+   
     prepend(value){
         const node=new Node(value)
-    
         if(this.isEmpty()){
             this.head=node 
         }else{
@@ -26,17 +23,12 @@ class LinkedList{
             node.next=this.head
             this.head=node
         }
-       
         this.size++
     }  
     append(value){
-
         const node=new Node(value)
-  
-
         if(this.isEmpty()){
-            this.head=node
-            
+            this.head=node 
         }else{
             let prev=this.head
           
@@ -46,7 +38,6 @@ class LinkedList{
             prev.next=node
         }
         this.size++
-
     }
     insert(value,index){
         if(index<0&& index>this.size){
@@ -54,21 +45,16 @@ class LinkedList{
         }
         if(index==0){
             this.prepend(value)
-
         } else{
             let node=new Node(value)
             let prev=this.head
             for(let i=0;i<index-1;i++){
-                prev=prev.next
-                
+                prev=prev.next  
             }
             node.next=prev.next
             prev.next=node
             this.size++
         }
-
-        
-
     }
     removefrom(index){
         if(index<0 || index>this.size){

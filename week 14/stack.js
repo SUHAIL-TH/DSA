@@ -17,7 +17,7 @@ class Stack{
     size(){
         return this.items.length
     }
-    print(){
+    print(){                                                            ssss
         console.log(this.items.toString())
     }
 

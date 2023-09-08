@@ -9,7 +9,6 @@ class circularqueue{
     }
     isFull(){
         return this.currentLength===this.capacity
-    
     }
     isEmpty(){
         return  this.currentLength===0
@@ -27,7 +26,6 @@ class circularqueue{
     dequeue(){
         if(this.isEmpty()){
             console.log("queue is empty")
-
         }else{
             this.items[this.front]=null
             this.front=(this.front+1)%this.capacity
@@ -38,13 +36,6 @@ class circularqueue{
             }
         }
     }
-    peek(){
-        if(!this.isEmpty()){
-        return this.items[this.front]
-        }
-        return null
-    }
-
     print(){
         if(this.isEmpty()){
             console.log("queue is empty")
@@ -59,13 +50,26 @@ class circularqueue{
             console.log(str)
         }
     }
+    peek(){
+        if(!this.isEmpty()){
+        return this.items[this.front]
+        }
+        return null
+    }
 }
 
 const circle=new circularqueue( 5)
 circle.enqueue(6)
+circle.enqueue(9)
+circle.enqueue(5)
 circle.enqueue(56)
-// circle.dequeue()
-// console.log(circle.isEmpty())
-// console.log(circle.isFull())
+circle.enqueue(67)
+
+circle.dequeue()
+circle.enqueue(65)
+
+
 circle.print()
 // console.log(circle.peek())
+
+
