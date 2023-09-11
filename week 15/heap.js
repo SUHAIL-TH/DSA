@@ -13,7 +13,6 @@ class Heap{
             this.shiftdown(i);
         }
     }
-
     shiftdown(current){  
         let endindex = this.heap.length-1;
         let leftindex = this.leftchild(current);
