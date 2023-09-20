@@ -5,4 +5,4 @@ function fibinacci(n){
     }
     return fib
 }
-console.log((fibinacci(5)));
+console.log((fibinacci(0)));
