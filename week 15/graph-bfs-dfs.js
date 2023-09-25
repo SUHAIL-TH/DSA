@@ -57,18 +57,7 @@ class Graph {
             console.log(vertex + " -> " + [...this.adjacencyList[vertex]]);
         }
     }
-  dfs(startvertex){
-    let vistited=new Set()
-    let explore=(vertex)=>{
-        vistited.add(vertex)
-        console.log(vertex)
-        for(let neighbour of this.adjacencyList[vertex]){
-            if(!vistited.has(vertex)){
-                explore(neighbour)
-            }
-        }
-    }
-  }
+ 
 }
 
 const graph = new Graph()

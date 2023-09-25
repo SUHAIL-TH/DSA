@@ -11,7 +11,7 @@ class Trie{
     psuffixtrie(str){
         for(var i=0;i<str.length;i++){
             this.insert(i,str)
-        }
+           }
     }
 
     insert(index,str){
@@ -20,7 +20,6 @@ class Trie{
             let ltr=str.charAt(j)
             var newNode=new TrieNode()
             if(!node.map.has(ltr)){
-               
                 node.map.set(ltr,newNode)
             }
             node=node.map.get(ltr)
