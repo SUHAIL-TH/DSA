@@ -1,3 +1,5 @@
+//this page contain the code for binary search tree
+
    class Node {
     constructor(value) {
         this.value = value
