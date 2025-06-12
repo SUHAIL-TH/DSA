@@ -1,3 +1,4 @@
+//this file contain the code for the heap data structure
 class Heap{
     constructor(){
         this.heap = [];
