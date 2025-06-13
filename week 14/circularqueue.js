@@ -1,3 +1,4 @@
+//circular queue as implemented here
 class circularqueue{
     constructor(capacity){
         this.items=new Array(capacity)
