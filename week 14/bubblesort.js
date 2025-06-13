@@ -1,3 +1,4 @@
+//this is the code for bubble sort 
 arr1=[-6,20,8,-2,4] 
  function bubblesort(arr){
     let swapped
