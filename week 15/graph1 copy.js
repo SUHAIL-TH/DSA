@@ -1,3 +1,4 @@
+//contain the code for the graph
 class Graph{
     constructor(){
         this.adajacenlist={}
