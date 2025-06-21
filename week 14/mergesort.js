@@ -1,4 +1,4 @@
-x
+//this contain the code for merge sort
  function mergesort(arr){
     if(arr.length<2){
         return arr
