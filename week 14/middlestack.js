@@ -1,4 +1,5 @@
 //remove middle element of stack
+//understand better 
 let stack=[1,2,3,4,5]
 
 let mid=Math.round(stack.length/2)
