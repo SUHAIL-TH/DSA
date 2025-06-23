@@ -1,4 +1,6 @@
 //QUICK SORT
+
+//This code contain the code for quick sort 
 function quicksort(arr){
     if(arr.length<2){
         return arr
