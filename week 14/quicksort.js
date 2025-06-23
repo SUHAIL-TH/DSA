@@ -1,3 +1,4 @@
+//QUICK SORT
 function quicksort(arr){
     if(arr.length<2){
         return arr
