@@ -1,5 +1,5 @@
 //this is the codde for stack implementaion
-
+//stack implemenation
 
 class Stack{
     constructor(){
