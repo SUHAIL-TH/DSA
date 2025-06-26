@@ -1,3 +1,6 @@
+//this is the codde for stack implementaion
+
+
 class Stack{
     constructor(){
         this.items=[]
