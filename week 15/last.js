@@ -1,3 +1,5 @@
+//code for trie
+
 class TrieNode{
     constructor(){
         this.map=new Map()
