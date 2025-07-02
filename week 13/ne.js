@@ -1,3 +1,5 @@
+//fubinacii series
+
 // function fubi(n){
 //     if(n<2){
 //         return n
