@@ -10,7 +10,7 @@
 // console.log(fubi(4))
 //////////////////////////////////////insert an  element in a specific position
 let arr=[1,2,3,4,5]
-
+//insert element in a specific position
 // let value=89
 // let position=3
 // for(i=arr.length;i>=position;i--){
