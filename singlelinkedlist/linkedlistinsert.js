@@ -1,5 +1,5 @@
 //this code is for linkedlist 
-
+//linked list
 class Node{
     constructor(value){
         this.value=value
