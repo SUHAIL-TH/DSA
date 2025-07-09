@@ -1,3 +1,4 @@
+//queue optimized code
 class Queue{
     constructor(){
         this.items={}
