@@ -1,3 +1,4 @@
+//code for selection sort
 let arr=[99,4,53,25,6,7,89]
 
 function selectionsort(arr){
