@@ -62,8 +62,6 @@ class linkedList{
         }
         this.size--
 
-
-
     }
     removefromend(){
         if(this.isEmpty()){
