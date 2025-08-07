@@ -1,7 +1,7 @@
 class Node{
     constructor(value){
-        this.value=value
-        this.next=null
+        this.value=value //this wil store the value
+        this.next=null  //this containt the index of location of next element 
     }
 }
 class linkedList{
