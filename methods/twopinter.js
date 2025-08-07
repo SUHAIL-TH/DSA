@@ -15,7 +15,8 @@ function reversearray(array){
 
         //increment the pointers
         left++
-        right--
+        right-- //decremetn the pointer
+        
     }
     return array
 
